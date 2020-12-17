@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href=" {% static 'predict/style.css' %} ">
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="main-site">
+        <div class="navigation">
+            <nav class="main-nav sticky-top">
+                <a href="#">
+                  <img src=" {% static 'predict/logo.png' %} " width="30" height="30" class="d-inline-block align-top logo" alt="""><p id = "title1">FASAL</p></img>
+                </a>
+                <p id="Signout1"><u>Sign Out</u></p>
+              </nav>
+        </div>          
+
+
+        <div class="card text-center main-card">
+            <div class="card-header">
+                <h2 id="titlee">Crop Recommendation</h2>
+            </div>
+            <div class="card-body">
+              <form action="result" method="GET">
+                <p>Enter Soil Type: 
+                <input type='text' name='soil'>
+              </p>
+                 <button type='submit' class="btn btn-primary Sumit">Submit</button>
+            
+              </form>
+            </div>
+          </div>
+        
+    </div>
+   
+</body>
+</html>
